@@ -1,0 +1,26 @@
+#title{
+    color: white;
+    background-color: rgb(73, 75, 78);
+    text-align: center;
+    line-height: 2em;
+    font-family: Lobster;
+    height: 2em;
+}
+body{
+    background-color: rgb(241, 240, 240);
+}
+#img-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#image{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+}
+#img-caption{
+    font-size: 7px;
+}
