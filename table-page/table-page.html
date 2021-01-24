@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="table-page-css.css">
+        <title>TablePage</title>
+    </head>
+    <body>
+        <main>
+            <h1 id="title">最爱吃的点心调查表</h1>
+            <p id="description">你最爱吃什么点心呢？请选出你最喜欢的口味和种类。</p>
+
+            <form id="survey form" action="#">
+                <div id="information">
+                <input id="name" type="text" placeholder="在这里输入你的名字">
+                <input id="email" type="text" placeholder="在这里输入你的邮箱">
+                <input id="number" type="text" max="1" min="100" placeholder="在这里输入你的年龄">
+                </div>
+
+                <div id="single-choice">
+                    <p>选择一个最喜欢的点心口味：</p>
+                    <label for="甜味"><input id="甜味" type="radio" name="flavor">甜味</label>
+                    <label for="咸味"><input id="咸味" type="radio" name="flavor">咸味</label>
+                    <label for="辣味"><input id="辣味" type="radio" name="flavor">辣味</label>
+                </div>
+
+                <div id="multi-choice">
+                    <p>选择一个或多个喜欢的点心：</p>
+                    <label for="薯片"><input id="薯片" type="checkbox" name="snack">薯片</label>
+                    <label for="巧克力"><input id="巧克力" type="checkbox" name="snack">巧克力</label>
+                    <label for="山楂条"><input id="山楂条" type="checkbox" name="snack">山楂条</label>
+                    <label for="柿子饼"><input id="柿子饼" type="checkbox" name="snack">柿子饼</label>
+                    <label for="酸奶"><input id="酸奶" type="checkbox" name="snack">酸奶</label>
+                    <label for="地瓜干"><input id="地瓜干" type="checkbox" name="snack">地瓜干</label>
+                    <label for="牛肉干"><input id="牛肉干" type="checkbox" name="snack">牛肉干</label>
+                </div>
+
+                <div id="note">
+                    <input id="name" type="text" placeholder="其他备注">
+                </div>
+
+                <button type="submit">提交</button>
+
+            </form>
+        </main>
+    </body>
+</html>

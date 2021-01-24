@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>net request</title>
+</head>
+<body>
+    <div id="msg">
+        <h1>{{information}}</h1>
+    </div>
+
+
+
+
+    <script  src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript">
+        axios.defaults.withCredentials=true
+    axios.defaults.crossDomain=true
+    axios.defaults.headers.get['Content-Type'] = 'application/json'
+        var app = new Vue(
+            {
+                el: "#msg",
+                data(){
+                    return{
+                        information:{
+                            name:null,
+                            address:{
+                                street:null,
+                                city: null,
+                                country: null
+                            },
+                        }
+                    }
+                },
+
+                mounted(){
+                    axios.get("data.json").then(response=>(this.information=response.data));
+                }
+                
+            }
+        )
+
+
+    </script>
+
+
+</body>
+</html>

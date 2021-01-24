@@ -1,0 +1,47 @@
+#title{
+    color: white;
+    background-color: rgb(62, 88, 77);
+    text-align: center;
+    line-height: 2em;
+    height: 2em
+
+}
+#description{
+    text-align: center;
+    font-size: 10px;
+
+
+}
+#information{
+    display: flex;
+    flex-direction: column; 
+}
+#name{
+    margin: 2px auto;
+}
+#email{
+    margin: 2px auto;
+}
+#number{
+    margin: 2px auto;
+}
+#single-choice{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#multi-choice{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+#note{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    display: block;
+    margin: 2 auto;
+}

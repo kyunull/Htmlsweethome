@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="message">{{message}}
+        多行文本：<textarea v-model="pan"></textarea>&nbsp;&nbsp;多行文本是：{{pan}}
+        <select v-model="val">
+            <option value="" disabled>---请选择---</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select>
+        <span>value:{{val}}</span>
+    
+
+         
+    </div>
+    <script  src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+    <script type="text/javascript">
+        var aaa = new Vue(
+            {
+                el: "#app",
+                data: {
+                    message: "",
+                    pan:"hi",
+                    val:"B"
+                }
+            }
+        )
+    </script>
+</body>
+</html>

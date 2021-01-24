@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-on Event</title>
+</head>
+<body>
+    <div id="app">
+        <button v-on:click="notice">点击测智商</button>
+    </div>
+
+
+
+    <script  src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+    <script type="text/javascript">
+        var aaa = new Vue(
+            {
+                el:"#app",
+                data:{
+                    message:"你很傻"
+                },
+                methods:{
+                    notice:function(event){
+                        alert(this.message);
+                    }
+                }
+            }
+
+        )
+    </script>
+</body>
+</html>

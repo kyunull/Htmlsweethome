@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firstVueFile</title>
+</head>
+<body>
+    <div id="msg">
+        <p> 啊啊啊啊{{message}}呃呃呃呃呃
+        </p>
+    </div>
+    <div> 呸呸呸</div>
+
+
+    <script  src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+    <script type="text/javascript">
+        var aaa = new Vue(
+            {
+                el: "#msg",
+                data: {
+                    message: "hello vue"
+                }
+            }
+        )
+    </script>
+</body>
+</html>

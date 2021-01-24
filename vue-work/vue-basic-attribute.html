@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vueBasicAttribute</title>
+</head>
+<body>
+    <div id="app">
+        <span :title="message">
+            你是傻子
+        </span>
+        <h4 v-if="condition">打开</h4>
+        <h4 v-else>关闭</h4>
+        <h5 v-for="a in items">
+            {{a.name}}-{{a.class}}
+        </h5>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.min.js"></script>
+    <script type="text/javascript">
+        var aaa = new Vue(
+            {
+                el: "#app",
+                data:{
+                    message: '页面加载于 ' + new Date().toLocaleString(),
+                    condition: true,
+                    items:[
+                        {name:"董妍" ,class:"大学生"},
+                        {name:"小明" ,class:"小学生"},
+                        {name:"傻子"}
+                    ]
+                
+                }
+            }
+        )
+        
+
+
+    </script>
+</body>
+</html>
